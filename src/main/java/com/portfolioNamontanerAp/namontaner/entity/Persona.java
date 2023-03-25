@@ -30,7 +30,7 @@ public class Persona {
 
     @NotNull
     @Size(min = 1, max = 45, message = "no cumple con la longitud")
-    private String fechaNac;
+    private String fecha_nac;
 
     @NotNull
     @Size(min = 1, max = 45, message = "no cumple con la longitud")
@@ -45,7 +45,7 @@ public class Persona {
     private String descripcion;
 
     @Size(min = 1, max = 45, message = "no cumple con la longitud")
-    private String urlFoto;
+    private String url_foto;
 
     /*
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "idEdu")
