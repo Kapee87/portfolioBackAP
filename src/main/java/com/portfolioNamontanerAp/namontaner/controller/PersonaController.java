@@ -43,7 +43,6 @@ public class PersonaController {
         return "Persona borrada con éxito";
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/personas/editar/{id}")
     public Persona editPersona(@RequestBody Persona newPersona, @PathVariable Long id) {
         Persona persona = iPersonaService.findPersona(id);

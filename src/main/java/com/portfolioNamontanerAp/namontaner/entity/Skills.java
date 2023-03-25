@@ -16,6 +16,6 @@ public class Skills {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idSkill;
     private String nombreSkill;
-    private String fotoSkill;
+    private String foto_skill;
     private int porcentaje;
 }

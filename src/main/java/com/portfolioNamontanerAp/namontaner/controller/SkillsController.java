@@ -18,7 +18,7 @@ public class SkillsController {
     @Autowired
     ISkillsService skillsService;
 
-    @GetMapping("/skills/traerLista")
+    @GetMapping("/skills/lista")
     public List<Skills> getSkills() {
         return skillsService.getSkills();
     }
@@ -38,7 +38,7 @@ public class SkillsController {
     public Skills updateSkill(@PathVariable Long id, @RequestBody Skills newSkill) {
         Skills skill = skillsService.findSkill(id);
         skill.setNombreSkill(newSkill.getNombreSkill());
-        skill.setFotoSkill(newSkill.getFotoSkill());
+        skill.setFoto_skill(newSkill.getFoto_skill());
         skill.setPorcentaje(newSkill.getPorcentaje());
         skillsService.saveSkills(skill);
         return skill;

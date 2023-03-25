@@ -21,5 +21,5 @@ public class Experiencia {
     private String fechaIniExp;
     private String fechaFinExp;
     private String descripcionExp;
-    private String imgExp;
+    private String img_exp;
 }

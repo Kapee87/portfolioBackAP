@@ -18,6 +18,6 @@ public class Proyectos {
     private String nombreProyecto;
     private String fechaProyecto;
     private String descripcionProyecto;
-    private String imgProyecto;
+    private String img_proyecto;
     private String urlProyecto;
 }

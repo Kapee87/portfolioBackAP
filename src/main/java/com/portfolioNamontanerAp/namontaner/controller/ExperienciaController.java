@@ -53,7 +53,7 @@ public class ExperienciaController {
         experiencia.setEmpresaExp(newExperiencia.getEmpresaExp());
         experiencia.setFechaFinExp(newExperiencia.getFechaFinExp());
         experiencia.setFechaIniExp(newExperiencia.getFechaIniExp());
-        experiencia.setImgExp(newExperiencia.getImgExp());
+        experiencia.setImg_exp(newExperiencia.getImg_exp());
         experiencia.setTituloExp(newExperiencia.getTituloExp());
         iExperienciaService.updateExperiencia(experiencia);
         return experiencia;

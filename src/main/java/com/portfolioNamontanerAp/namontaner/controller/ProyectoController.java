@@ -18,7 +18,7 @@ public class ProyectoController {
     @Autowired
     IProyectosService iProyectosService;
 
-    @GetMapping("/proyectos/traerLista")
+    @GetMapping("/proyectos/lista")
     public List<Proyectos> getProyectos() {
         return iProyectosService.getProyectos();
     }
@@ -39,7 +39,7 @@ public class ProyectoController {
         Proyectos proyecto = iProyectosService.findProyecto(id);
         proyecto.setNombreProyecto(newProyecto.getNombreProyecto());
         proyecto.setDescripcionProyecto(newProyecto.getDescripcionProyecto());
-        proyecto.setImgProyecto(newProyecto.getImgProyecto());
+        proyecto.setImg_proyecto(newProyecto.getImg_proyecto());
         proyecto.setUrlProyecto(newProyecto.getUrlProyecto());
         iProyectosService.saveProyectos(proyecto);
         return proyecto;

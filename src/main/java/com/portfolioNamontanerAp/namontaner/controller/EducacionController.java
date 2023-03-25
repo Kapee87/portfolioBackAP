@@ -18,8 +18,7 @@ public class EducacionController {
     @Autowired
     IEducacionService educacionService;
 
-    @GetMapping("/educacion/traer")
-
+    @GetMapping("/educacion/lista")
     public List<Educacion> getEducacion() {
         return educacionService.getEducacion();
     }
@@ -47,7 +46,7 @@ public class EducacionController {
         educacion.setDescripcionEdu(NewEducacion.getDescripcionEdu());
         educacion.setFechaFinEdu(NewEducacion.getFechaFinEdu());
         educacion.setFechaIniEdu(NewEducacion.getFechaIniEdu());
-        educacion.setImgEdu(NewEducacion.getImgEdu());
+        educacion.setImg_edu(NewEducacion.getImg_edu());
         educacion.setInstitucionEdu(NewEducacion.getInstitucionEdu());
         educacion.setTituloEdu(NewEducacion.getTituloEdu());
         educacionService.saveEducacion(educacion);

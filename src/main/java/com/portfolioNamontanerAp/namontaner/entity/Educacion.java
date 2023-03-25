@@ -20,6 +20,6 @@ public class Educacion {
     private String fechaIniEdu;
     private String fechaFinEdu;
     private String descripcionEdu;
-    private String imgEdu;
+    private String img_edu;
 
 }
