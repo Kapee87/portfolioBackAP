@@ -41,10 +41,9 @@ public class Persona {
     private String correo;
 
     @NotNull
-    @Size(min = 1, max = 2000, message = "no cumple con la longitud")
     private String descripcion;
 
-    @Size(max = 2000, message = "no cumple con la longitud")
+    @NotNull
     private String url_foto;
 
     /*
